@@ -26,7 +26,7 @@ def get_frida_response(user_message: str, history: list):
     # Use the renamed availability check and the LLM instance
     # Check for GOOGLE_API_KEY_AVAILABLE
     if not GOOGLE_API_KEY_AVAILABLE or LLM is None:
-        return "Ay, mi amor, my connection to the spirit world (the GOOGLE API) is not working. Perhaps the API key is missing or incorrect?"
+        return "Ay, mi amor, Please try again."
 
     # --- GİRDİ FİLTRELEME ADIMI ---
     # Kullanıcı mesajını LLM'e göndermeden önce filtrele.
