@@ -1,0 +1,7 @@
+# Projenin Python bağımlılıkları listesi
+
+gradio
+elevenlabs
+langchain-google-genai
+langchain-core
+

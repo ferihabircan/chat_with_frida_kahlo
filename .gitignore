@@ -1,0 +1,42 @@
+# Ignore API key file - Contains sensitive information
+# CRITICAL: Do NOT commit this file if it contains your actual keys!
+api_key.py
+
+# Ignore the temporary audio files directory
+# Files generated during runtime that are not part of the source code
+temp_audio/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directories
+# These contain dependencies specific to your environment, not source code
+venv/
+.venv/
+env/
+# Add other virtual environment names if you use a different convention
+
+# Ignore editor/IDE specific files
+# These are personal settings and caches, not part of the project source
+.vscode/      # VS Code
+.idea/        # PyCharm
+*.swp         # Vim swap files
+
+# Ignore OS generated files
+.DS_Store     # macOS
+Thumbs.db     # Windows
+
+# Ignore potential build artifacts and distribution files
+dist/
+build/
+*.egg-info/
+.nox/         # Nox environments
+.tox/         # Tox environments
+
+# Ignore potential logs or output directories created by the application or libraries
+logs/
+*.log
+output/
+gradio_cached_examples/ # Gradio might cache examples here
+runs/                   # Some ML libraries use 'runs' or 'experiments' directories

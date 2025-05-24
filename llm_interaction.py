@@ -2,7 +2,7 @@
 
 # Import the LLM instance and availability status from config
 # Make sure GEMINI_API_KEY_AVAILABLE is actually GOOGLE_API_KEY_AVAILABLE based on your config
-from config import LLM, GOOGLE_API_KEY_AVAILABLE # Assuming it's renamed in config
+from config import LLM, GEMINI_API_KEY_AVAILABLE # Assuming it's renamed in config
 from persona import FRIDA_PERSONA_PROMPT
 from rag_system import retrieve_relevant_info_tr # Assuming this is correctly implemented now
 
@@ -25,7 +25,7 @@ def get_frida_response(user_message: str, history: list):
     """
     # Use the renamed availability check and the LLM instance
     # Check for GOOGLE_API_KEY_AVAILABLE
-    if not GOOGLE_API_KEY_AVAILABLE or LLM is None:
+    if not GEMINI_API_KEY_AVAILABLE or LLM is None:
         return "Ay, mi amor, Please try again."
 
     # --- GİRDİ FİLTRELEME ADIMI ---
